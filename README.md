@@ -18,14 +18,14 @@ You can run this script either on Windows (tested: Windows 10) or Linux (tested:
 - Create a Python virtual environnement with `python -m venv venv`
 - Activate the virtual environnement with `.\venv\Scripts\activate` on Windows or `source venv/bin/activate` on Linux
 - Install the Python requirements with `python -m pip install -r requirements.txt`
-- Start the program with `python main.py`
+- Start the program with `python main.py` (You cant before the [Configuration](https://github.com/Lucaa8/Botiska#how-to-configure) step)
 
 ### Linux
 If you want to run this script on a Linux server you can use `screen`
 - You will need to install it with `sudo apt-get install screen`
 - Create a script e.g `start.sh` and put the following line inside it `screen -S historiska -d -m bash -c "source venv/bin/activate; python main.py"`
 - Give the script the execute permision with `sudo chmod 744 start.sh`
-- Run the script with `./start.sh`
+- Run the script with `./start.sh` (You cant before the [Configuration](https://github.com/Lucaa8/Botiska#how-to-configure) step)
 - Now you can attach to the screen with `screen -r historiska` and detach from it (when inside) with `ctrl+a+d`
 
 ## How to configure
