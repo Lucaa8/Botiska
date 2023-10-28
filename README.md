@@ -5,7 +5,7 @@ The script will each time a day;
 - Connect to each second account you have and collect their 4 cards
 - Give to your main account each duplicate card a second account may receive
 - Warn you if you got a new card in your main collection!
-- Update your Discord messages (Researched and missing cards) on the Historiska [Discord](https://discord.gg/Q8jtnYv9dE) (Optionnal)
+- Update your Discord messages (Researched and missing cards) on the Historiska [Discord](https://discord.gg/Q8jtnYv9dE) (Optionnal, [Self-bot](https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots-) are againt Discord's TOS)
 - Logout, wait 24h and do-it again.
 
 ## Requirements
@@ -31,7 +31,7 @@ If you want to run this script on a Linux server you can use `screen`
 
 ## How to configure
 **Kill the script if running to continue in this step** \
-In this step we will configure the bot to tell the script which Historiska account you want to use and which Discord account the bot will use.
+In this step we will configure the script to tell him which Historiska account you want to use and which Discord account the self-bot will use.
 - Rename the `config_Example.json` file to `config.json` (`mv config_Example.json config.json` for Linux)
 - Set your main account (the account you will get the cards on) credentials. `id` can be either your mail or username
 ```json
