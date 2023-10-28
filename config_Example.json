@@ -1,0 +1,34 @@
+{
+  "accounts": {
+    "main": {
+      "id": "YourMainAccountName",
+      "password": "YourMainAccountPassword"
+    },
+    "others": [
+      {
+        "id": "DoubleAccount1Name",
+        "password": "DoubleAccount1Password"
+      },
+      {
+        "id": "DoubleAccount2Name",
+        "password": "DoubleAccount2Password"
+      }
+    ]
+  },
+  "trade_settings": {
+    "excluded_cards": [1, 6],
+    "minimum_remaining": 1
+  },
+  "discord": {
+    "api_version": "v9",
+    "token": "YourDiscordAuthorizationToken",
+    "missing": {
+      "channel_id": "WhereYourResearchedCardsMessageIs?",
+      "message_id": "YourResearchedCardsMessageId"
+    },
+    "duplicates": {
+      "channel_id": "WhereYourDuplicateCardsMessageIs?",
+      "message_id": "YourDuplicateCardsMessageId"
+    }
+  }
+}
