@@ -32,7 +32,7 @@ If you want to run this script on a Linux server you can use `screen`
 ## How to configure
 **Kill the script if running to continue in this step** \
 In this step we will configure the bot to tell the script which Historiska account you want to use and which Discord account the bot will use.
-- Rename the `config_Example.json` file to `config.json`
+- Rename the `config_Example.json` file to `config.json` (`mv config_Example.json config.json` for Linux)
 - Set your main account (the account you will get the cards on) credentials. `id` can be either your mail or username
 ```json
 "main": {
