@@ -19,6 +19,7 @@ You can run this script either on Windows (tested: Windows 10) or Linux (tested:
 - Activate the virtual environnement with `.\venv\Scripts\activate` on Windows or `source venv/bin/activate` on Linux
 - Install the Python requirements with `python -m pip install -r requirements.txt`
 - Start the program with `python main.py` (You cant before the [Configuration](#how-to-configure) step)
+- To leave the venv with Linux type `deactivate`
 
 ### Linux
 If you want to run this script on a Linux server you can use `screen`
