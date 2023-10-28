@@ -49,8 +49,7 @@ In this step we will configure the bot to tell the script which Historiska accou
   {
     "id": "luca3",
     "password": "mysecretpassword3"
-  },
-  {...}
+  }
 ]
 ```
 - ~~Set your trade restrictions~~ (Only if you are using the Discord feature). It's an advanced setting, you wont need it
