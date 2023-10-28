@@ -5,7 +5,7 @@ The script will each time a day;
 - Connect to each second account you have and collect their 4 cards
 - Give to your main account each duplicate card a second account may receive
 - Warn you if you got a new card in your main collection!
-- Update your Discord messages (Researched and missing cards) on the Historiska [Discord](https://discord.gg/Q8jtnYv9dE) (Optionnal, [Self-bot](https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots-) are againt Discord's TOS)
+- Update your Discord messages (Researched and missing cards) on the Historiska [Discord](https://discord.gg/Q8jtnYv9dE) (Optionnal, [Self-bot](https://support.discord.com/hc/en-us/articles/115002192352-Automated-user-accounts-self-bots-) are againt Discord's TOS, use this feature at your own risk)
 - Logout, wait 24h and do-it again.
 
 ## Requirements
