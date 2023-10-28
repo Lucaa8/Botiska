@@ -24,8 +24,8 @@ You can run this script either on Windows (tested: Windows 10) or Linux (tested:
 ### Linux
 If you want to run this script on a Linux server you can use `screen`
 - You will need to install it with `sudo apt-get install screen`
-- Create a script e.g `start.sh` and put the following line inside it `screen -S historiska -d -m bash -c "source venv/bin/activate; python main.py"`
-- Give the script the execute permision with `sudo chmod 744 start.sh`
+- Create a script e.g `start.sh` (`nano start.sh`) and put the following line inside it `screen -S historiska -d -m bash -c "source venv/bin/activate; python main.py"`
+- Give the script the execute permision with `sudo chmod 774 start.sh`
 - Run the script with `./start.sh` (You cant before the [Configuration](#how-to-configure) step)
 - Now you can attach to the screen with `screen -r historiska` and detach from it (when inside) with `ctrl+a+d`
 
@@ -62,3 +62,6 @@ In this step we will configure the bot to tell the script which Historiska accou
   ![image](https://github.com/Lucaa8/Botiska/assets/47627900/9e625968-064b-4746-b3e0-c03328a3b712)
 
   - `duplicates.message_id`: Same as `missing.message_id` but for the `#cartes-à-doubles` channel
+
+## Conclusion
+If every step went well you can see the current datetime when running the script. You will need to wait 4am in the morning to check if it worked!
