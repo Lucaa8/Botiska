@@ -18,7 +18,7 @@ You can run this script either on Windows (tested: Windows 10) or Linux (tested:
 - Create a Python virtual environnement with `python -m venv venv`
 - Activate the virtual environnement with `.\venv\Scripts\activate` on Windows or `source venv/bin/activate` on Linux
 - Install the Python requirements with `python -m pip install -r requirements.txt`
-- Start the program with `python main.py` (You cant before the [Configuration](https://github.com/Lucaa8/Botiska#how-to-configure) step)
+- Start the program with `python main.py` (You cant before the [Configuration](#how-to-configure) step)
 
 ### Linux
 If you want to run this script on a Linux server you can use `screen`
