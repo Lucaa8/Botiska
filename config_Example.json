@@ -16,18 +16,19 @@
     ]
   },
   "trade_settings": {
-    "excluded_cards": [1, 6],
+    "excluded_cards": [],
     "minimum_remaining": 1
   },
   "discord": {
+    "enabled": true,
     "api_version": "v9",
     "token": "YourDiscordAuthorizationToken",
     "missing": {
-      "channel_id": "WhereYourResearchedCardsMessageIs?",
+      "channel_id": "1160569736497725553",
       "message_id": "YourResearchedCardsMessageId"
     },
     "duplicates": {
-      "channel_id": "WhereYourDuplicateCardsMessageIs?",
+      "channel_id": "1160568194503811102",
       "message_id": "YourDuplicateCardsMessageId"
     }
   }

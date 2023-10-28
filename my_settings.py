@@ -21,6 +21,9 @@ class Settings:
 
     def get_minimum_cards_remaining(self):
         return self.settings["trade_settings"]["minimum_remaining"]
+        
+    def is_discord_enabled(self):
+        return self.settings["discord"]["enabled"]
 
     def get_discord_version(self):
         return self.settings["discord"]["api_version"]

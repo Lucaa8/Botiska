@@ -30,12 +30,13 @@ def do_action():
             print("Logout from account\n------------")
             logout(token)
 
-        print("Getting entities...")
-        my_entities = entities(token_main, categories_list)
-        my_missing_cards = get_missing(my_entities)
-        my_duplicates_card = get_duplicates(my_entities)
-        print("Editing discord messages with dup and miss...")
-        edit_discord_messages(my_missing_cards, my_duplicates_card)
+        if settings.is_discord_enabled():
+            print("Getting entities...")
+            my_entities = entities(token_main, categories_list)
+            my_missing_cards = get_missing(my_entities)
+            my_duplicates_card = get_duplicates(my_entities)
+            print("Editing discord messages with dup and miss...")
+            edit_discord_messages(my_missing_cards, my_duplicates_card)
 
         logout(token_main)
         print("Logged out from main\nEnding day " + get_current_day_and_time() + "...\n------------")
