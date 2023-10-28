@@ -24,10 +24,10 @@ You can run this script either on Windows (tested: Windows 10) or Linux (tested:
 ### Linux
 If you want to run this script on a Linux server you can use `screen`
 - You will need to install it with `sudo apt-get install screen`
-- Create a script e.g `start.sh` (`nano start.sh`) and put the following line inside it `screen -S historiska -d -m bash -c "source venv/bin/activate; python main.py"`
+- Create a script e.g `start.sh` (`nano start.sh`) and put the following line inside it `screen -S botiska -d -m bash -c "source venv/bin/activate; python main.py"`
 - Give the script the execute permision with `sudo chmod 774 start.sh`
 - Run the script with `./start.sh` (You cant before the [Configuration](#how-to-configure) step)
-- Now you can attach to the screen with `screen -r historiska` and detach from it (when inside) with `ctrl+a+d`
+- Now you can attach to the screen with `screen -r botiska` and detach from it (when inside) with `ctrl+a+d`
 
 ## How to configure
 **Kill the script if running to continue in this step** \
