@@ -4,6 +4,8 @@ from apscheduler.schedulers.blocking import BlockingScheduler
 
 def do_action():
     print("Starting day " + get_current_day_and_time() + "...")
+    settings.reload()
+    print("Reloaded settings!")
     token_main = login(settings.get_main_account())
     if token_main is not None:
         print("Logged in on main account.")
