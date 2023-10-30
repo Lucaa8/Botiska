@@ -64,4 +64,6 @@ In this step we will configure the script to tell him which Historiska account y
   - `duplicates.message_id`: Same as `missing.message_id` but for the `#cartes-à-doubles` channel
 
 ## Conclusion
-If every step went well you can see the current datetime when running the script. You will need to wait 4am in the morning to check if it worked!
+If every step went well you can see the current datetime when running the script. You will need to wait 4am in the morning to check if it worked! \
+Here an example of output you should see 
+![Screenshot_13](https://github.com/Lucaa8/Botiska/assets/47627900/8136ffca-28cf-4ac0-a8e1-578bf8cfbc70)
