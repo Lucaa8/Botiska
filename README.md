@@ -63,6 +63,11 @@ In this step we will configure the script to tell him which Historiska account y
 
   - `duplicates.message_id`: Same as `missing.message_id` but for the `#cartes-à-doubles` channel
 
+## Commands
+You can type some text while the script is running.
+- **quit**: Ends the script
+- *coming soon*
+
 ## Conclusion
 If every step went well you can see the current datetime when running the script. You will need to wait 4am in the morning to check if it worked! \
 Here an example of output you should see 
