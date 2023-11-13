@@ -71,7 +71,7 @@ def activate_card(tk_main: str, tk_dup: str, card: int, missing_cards: list[int]
     if code is not None:
         response = get_response_json(r.post(ROUTES["activate_card"](code), headers=add_token_header(DEFAULT_HEADERS, tk_main)))
         if is_response_success(response) and card in missing_cards:
-            print("Got a new card! ("+response["content"]["name"]+")")
+            my_print("Got a new card! ("+response["content"]["name"]+")")
 
 
 def edit_discord_messages(list_missing: list[int], list_duplicates: dict[int, list[int]]):
@@ -79,5 +79,8 @@ def edit_discord_messages(list_missing: list[int], list_duplicates: dict[int, li
     d_miss_info = settings.get_discord_missing_info()
     d_header = {"Authorization": settings.get_discord_token()}
     r.patch(ROUTES["discord"](d_dup_info["channel_id"], d_dup_info["message_id"]), headers=d_header, json={"content": build_duplicates_message(list_duplicates)})
-    r.patch(ROUTES["discord"](d_miss_info["channel_id"], d_miss_info["message_id"]), headers=d_header, json={"content": build_missing_message(list_missing)})
+    if len(list_missing) > 0:
+        r.patch(ROUTES["discord"](d_miss_info["channel_id"], d_miss_info["message_id"]), headers=d_header, json={"content": build_missing_message(list_missing)})
+    else:
+        my_print('No missing cards to update. Your collection is full!')
 

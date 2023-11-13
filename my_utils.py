@@ -97,3 +97,13 @@ def build_duplicates_message(duplicates: dict[int, list[int]]) -> str:
 
 def get_current_day_and_time():
     return f"[{datetime.now().strftime('%d/%m/%Y %H:%M:%S')}]"
+
+
+def get_current_day_logfile() -> str:
+    return f"logs/{datetime.now().strftime('%d.%m.%Y')}.log"
+
+def my_print(txt: str):
+    format_txt = f"{get_current_day_and_time()} {txt}"
+    print(format_txt)
+    with open(get_current_day_logfile(), 'a+') as f:
+        f.write(format_txt+'\n')
